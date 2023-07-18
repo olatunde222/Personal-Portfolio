@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <!-- Custom CSS file Link -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Fontawesome Link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header Section Starts -->
+    <section>
+      <div class="header" id="header">
+        <div class="header-container">
+          <div class="logo">
+            <a href="#"><span>O</span><span>latunde</span></a>
+          </div>
+          <div class="nav-links">
+            <nav>
+              <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+              </ul>
+              <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+          </div>
+        </div>
+        <div class="header-container">
+          <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>
+              Hi, I'm <span>Olatunde</span><br />
+              from United Arab Emirates
+            </h1>
+          </div>
+          <div class="header-image">
+            <img src="./images/no-bg.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Header Section Ends -->
+    <!-- About Section Starts -->
+    <section>
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="./images/no-bg-2.png" alt="" />
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p>
+                Welcome! I'm an experienced professional passionate about
+                turning data into actionable insights, creating captivating user
+                experiences, and developing mobile applications for Android and
+                iOS platforms. With a strong background in data science,
+                analysis, machine learning, web development, and mobile app
+                development, I thrive on delivering meaningful solutions that
+                drive exceptional results across various platforms. By
+                seamlessly blending data science with web and mobile app
+                development, I create visually captivating designs infused with
+                interactive data visualizations. My expertise in HTML, CSS,
+                JavaScript, and frameworks like React allows me to craft
+                engaging interfaces that bring data to life on the web.
+                Furthermore, I am proficient in developing native Android
+                applications using Java or Kotlin and native iOS applications
+                using Swift. This enables me to create intuitive and
+                feature-rich mobile experiences tailored to specific platform
+                requirements. But it doesn't stop there. Leveraging statistical
+                and machine learning techniques, I uncover valuable insights
+                from complex datasets, regardless of the platform. From
+                classification and regression to clustering and recommendation
+                systems, I have a proven track record of extracting valuable
+                information. What sets me apart is my ability to transform
+                insights into action. With proficiency in technologies like Django,
+                Node.js and databases like MySQL and MongoDB, I build
+                robust server-side applications that effectively process and
+                manage complex data. Additionally, I am well-versed in
+                developing RESTful APIs to facilitate seamless communication
+                between mobile applications and backend systems. I'm constantly
+                learning, staying ahead of emerging trends in data science,
+                machine learning, web development, and mobile app development.
+                By pushing the boundaries of what's possible, I integrate
+                cutting-edge tools and techniques to unlock new opportunities
+                across various platforms. If you're looking for a dynamic
+                professional who combines data science, machine learning, web
+                development, and mobile app development to create captivating
+                experiences, let's connect. Together, we can harness the power
+                of data and drive exceptional outcomes across web and mobile
+                platforms.
+              </p>
+              <!-- Tab Links For the Skills  -->
+              <!--  an onclick handler that will open a tab for the class(skills, experience, education, certifications
+                      so when the class is clicked, the new tab opens the contents in it) -->
+              <div class="tab-titles">
+                <p class="tab-links active" onclick="opentab('skills')">
+                  Skills
+                </p>
+                <p class="tab-links" onclick="opentab('experience')">
+                  Experience
+                </p>
+                <p class="tab-links" onclick="opentab('education')">
+                  Education
+                </p>
+                <p class="tab-links" onclick="opentab('certifications')">
+                  Certifications
+                </p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>UI/UX</span><br />Web Designing/App interfaces</li>
+                  <li><span>Web Development</span><br />Web App Development</li>
+                  <li>
+                    <span>App Development</span><br />Building Android / IOS
+                    Apps
+                  </li>
+                  <li>
+                    <span>Data Science</span><br />Python, Pandas, Numpy,
+                    Matplotlib, Seaborn, Scikit-learn, TensorFlow, Keras
+                  </li>
+                  <li>
+                    <span>Data Analysis</span><br />Visualizations, Data
+                    Cleaning, Exploratory Data Analysis, Feature Engineering,
+                    Model Selection and Validation
+                  </li>
+                  <li>
+                    <span>Machine Learning</span><br />Supervised Learning,
+                    Unsupervised Learning, Deep Learning, Reinforcement Learning
+                  </li>
+                  <li>
+                    <span>Risk Assessment</span><br />Financial Risk Assessment,
+                    Market Risk Assessment, Credit Risk Assessment
+                  </li>
+                  <li>
+                    <span>Financial Analysis</span><br />Financial Modeling,
+                    Investment Analysis, Portfolio Management, Capital Budgeting
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>2019 till Date Emergency Analyst</span><br />Emirates
+                    Transport Services
+                  </li>
+                  <li>
+                    <span>2017 - 2019 Guarantee Trust Bank Plc.</span
+                    ><br />Transaction Service Officer
+                  </li>
+                  <li>
+                    <span>2016 - 2017 First City Monument Bank Plc.</span
+                    ><br />Account Relationship Officer
+                  </li>
+                  <li>
+                    <span>2014 - 2016 First City Monument Bank Plc.</span
+                    ><br />Customer Service Representative
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>University Of Makurdi</span><br />Post Graduate in
+                    Finance
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="certifications">
+                <ul>
+                  <li>
+                    <span>Google</span><br />Data Analytics Professional
+                    Certificate
+                  </li>
+                  <li>
+                    <span>IBM</span><br />Data Science Professional Certificate
+                  </li>
+                  <li>
+                    <span>IBM</span><br />AI Engineering Professional
+                    Certificate
+                  </li>
+                  <li>
+                    <span>London Int'l Studies Center</span><br />Data Science,
+                    Data Analytics & Machine Learning Professional Certificate
+                  </li>
+                  <li>
+                    <span>Meta</span><br />Front-End Developer Certificate
+                  </li>
+                  <li><span>Meta</span><br />Back-End Developer Certificate</li>
+                  <li><span>Meta</span><br />Android Developer</li>
+                  <li>
+                    <span>Vanderbilt University</span><br />Prompt Engineering
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section Ends -->
+
+    <!-- Services Section Starts -->
+
+    <section>
+      <div id="services">
+        <div class="container">
+          <h1 class="sub-titles">My Services</h1>
+          <div class="services-list">
+            <div>
+              <i class="fas fa-code"></i>
+              <h2>Web Design</h2>
+              <p>Wordpress, PhotoShop, Sketch.</p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fas fa-crop"></i>
+              <h2>UI/UX Design</h2>
+              <p>Figma, Framer, InVision.</p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-app-store"></i>
+              <h2>App Design</h2>
+              <p>Adobe XD, Figma, Fluid UI.</p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-mobile-screen"></i>
+              <h2>Mobile Applications</h2>
+              <p>IOS and Andriod Apps</p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-sharp fa-solid fa-chart-simple"></i>
+              <h2>Data Analysis</h2>
+              <p>Pandas, Seaborn, Numpy.</p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-chart-line"></i>
+              <h2>Financial Analysis</h2>
+              <p>Cash Flow Analysis, Ratio Analysis, Trend Analysis.</p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-hand-holding-dollar"></i>
+              <h2>Risk Analysis</h2>
+              <p>Decision Tree, Failure Modes and Effects, Risk Matrix.</p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-microchip"></i>
+              <h2>Machine Learning</h2>
+              <p>Scikit-learn, TensorFlow, Keras.</p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-searchengin"></i>
+              <h2>Prompt Engineering</h2>
+              <p>Chat GPT, Mid-Journey, Open-AI, DALL E.</p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section Ends -->
+
+    <!-- Portfolio section Starts -->
+
+    <section>
+      <div id="portfolio">
+        <div class="container">
+          <h1 class="sub-titles">My Work</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src="./images/work-1.png" />
+              <div class="layer">
+                <h3>Social Media App</h3>
+                <p>
+                  The App that connects you to the talented people arround the
+                  world. Dowload it from play store.
+                </p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="./images/work-2.png" />
+              <div class="layer">
+                <h3>Weather App</h3>
+                <p>
+                  The App that get first hand climate information all arround
+                  the world. Dowload it from play store.
+                </p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="./images/work-3.png" />
+              <div class="layer">
+                <h3>Photo App</h3>
+                <p>
+                  The App that gives you access to unlimited images from
+                  talented people arround the world. Dowload it from play store.
+                </p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn">See More</a>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio section Ends -->
+
+    <!-- Contact Section Starts -->
+
+    <section>
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-titles">Contact Me</h1>
+              <p><i class="fas fa-paper-plane"></i>contact:</p>
+              <p><i class="fas fa-phone"></i>+971556185968</p>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/olatunde-olukoya/"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/olatunde222"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="https://github.com/olatunde222"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="mailto:olatunde_olukoya@yahoo.com"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </div>
+              <!-- Download CV Link -->
+              <a href="images/my-cv.pdf" download class="btn btn2"
+                >Download CV</a
+              >
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="Email"
+                  placeholder="Your Email"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  rows="6"
+                  placeholder="Your Message"
+                ></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Copyright &copy; <span>Olatunde Olukoya</span></p>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section Ends -->
+    <!-- Contact Section Starts -->
+    <!-- Custom JavaScript Link  -->
+    <script src="./script.js"></script>
+  </body>
+</html>
